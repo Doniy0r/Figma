@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    /*height: 100% !important;*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    overflow: hidden;
+    transition: ease all .5s;
+}
+
+.text {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header:hover .overlay {
+    opacity: 1;
+    width: 100%;
+}
+
+.text button {
+    color: white;
+    border: 1px solid white;
+}
+@font-face {
+    font-family: Redressed-Regular;
+    src: url("fonts/Redressed-Regular.ttf");
+}
+*{
+    font-family: Redressed-Regular,serif;
+}
